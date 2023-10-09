@@ -7,12 +7,7 @@
 
 #import "RegisteredLoggingTestAppDelegate.h"
 #import "RegisteredLoggingTestViewController.h"
-#import <CocoaLumberjack/CocoaLumberjack.h>
-#import "Lions.h"
-#import "Tigers.h"
-
-// Log levels: off, error, warn, info, verbose
-static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#import "CustomLogger.h"
 
 @implementation RegisteredLoggingTestAppDelegate
 
@@ -21,23 +16,8 @@ static DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [DDLog addLogger:(id<DDLogger>)[DDTTYLogger sharedInstance]];
-    
-    [Lions logStuff];
-    [Tigers logStuff];
-    
-    NSArray *registeredClassNames = [DDLog registeredClassNames];
-    DDLogVerbose(@"registeredClassNames: %@", registeredClassNames);
-    
-    NSArray *registeredClasses = [DDLog registeredClasses];
-    for (Class class in registeredClasses)
-    {
-        [class ddSetLogLevel:DDLogLevelVerbose];
-    }
-    
-    [Lions logStuff];
-    [Tigers logStuff];
-    
+    [DDLog addLogger:[CustomLogger alloc] withLevel:DDLogLevelError];
+
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

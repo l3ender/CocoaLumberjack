@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91DC95302AD4599700786F67 /* CustomLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DC952F2AD4599700786F67 /* CustomLogger.m */; };
 		D8ACCF17F67B8C1597B20E55 /* libPods-RegisteredLoggingTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B95E1AF43AC63D8A6E43BF /* libPods-RegisteredLoggingTest.a */; };
 		DC7DC5301415523E00601B40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7DC52F1415523E00601B40 /* UIKit.framework */; };
 		DC7DC5321415523E00601B40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7DC5311415523E00601B40 /* Foundation.framework */; };
@@ -17,8 +18,6 @@
 		DC7DC5431415523F00601B40 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC7DC5411415523F00601B40 /* MainWindow.xib */; };
 		DC7DC5461415523F00601B40 /* RegisteredLoggingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7DC5451415523F00601B40 /* RegisteredLoggingTestViewController.m */; };
 		DC7DC5491415523F00601B40 /* RegisteredLoggingTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC7DC5471415523F00601B40 /* RegisteredLoggingTestViewController.xib */; };
-		DC7DC5671415538700601B40 /* Lions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7DC5641415538700601B40 /* Lions.m */; };
-		DC7DC5681415538700601B40 /* Tigers.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7DC5661415538700601B40 /* Tigers.m */; };
 		DCD6EACA16FFC34C00710668 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD6EAC916FFC34C00710668 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +26,8 @@
 		43AF806E2174EF6200C0D9DC /* Module-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Module-Debug.xcconfig"; sourceTree = "<group>"; };
 		43AF806F2174EF6200C0D9DC /* Module-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Module-Shared.xcconfig"; sourceTree = "<group>"; };
 		64D981A2AA12FE9577D235FF /* Pods-RegisteredLoggingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisteredLoggingTest.debug.xcconfig"; path = "Target Support Files/Pods-RegisteredLoggingTest/Pods-RegisteredLoggingTest.debug.xcconfig"; sourceTree = "<group>"; };
+		91DC952E2AD4594000786F67 /* CustomLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLogger.h; sourceTree = "<group>"; };
+		91DC952F2AD4599700786F67 /* CustomLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLogger.m; sourceTree = "<group>"; };
 		A355FA72FD48093687F45C4E /* Pods-RegisteredLoggingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisteredLoggingTest.release.xcconfig"; path = "Target Support Files/Pods-RegisteredLoggingTest/Pods-RegisteredLoggingTest.release.xcconfig"; sourceTree = "<group>"; };
 		D6B95E1AF43AC63D8A6E43BF /* libPods-RegisteredLoggingTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RegisteredLoggingTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7DC52B1415523E00601B40 /* RegisteredLoggingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisteredLoggingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +44,6 @@
 		DC7DC5441415523F00601B40 /* RegisteredLoggingTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisteredLoggingTestViewController.h; sourceTree = "<group>"; };
 		DC7DC5451415523F00601B40 /* RegisteredLoggingTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisteredLoggingTestViewController.m; sourceTree = "<group>"; };
 		DC7DC5481415523F00601B40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RegisteredLoggingTestViewController.xib; sourceTree = "<group>"; };
-		DC7DC5631415538700601B40 /* Lions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lions.h; sourceTree = "<group>"; };
-		DC7DC5641415538700601B40 /* Lions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lions.m; sourceTree = "<group>"; };
-		DC7DC5651415538700601B40 /* Tigers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tigers.h; sourceTree = "<group>"; };
-		DC7DC5661415538700601B40 /* Tigers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tigers.m; sourceTree = "<group>"; };
 		DCD6EAC916FFC34C00710668 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,10 +107,6 @@
 		DC7DC5351415523E00601B40 /* RegisteredLoggingTest */ = {
 			isa = PBXGroup;
 			children = (
-				DC7DC5631415538700601B40 /* Lions.h */,
-				DC7DC5641415538700601B40 /* Lions.m */,
-				DC7DC5651415538700601B40 /* Tigers.h */,
-				DC7DC5661415538700601B40 /* Tigers.m */,
 				DC7DC53E1415523F00601B40 /* RegisteredLoggingTestAppDelegate.h */,
 				DC7DC53F1415523F00601B40 /* RegisteredLoggingTestAppDelegate.m */,
 				DC7DC5411415523F00601B40 /* MainWindow.xib */,
@@ -121,6 +114,8 @@
 				DC7DC5451415523F00601B40 /* RegisteredLoggingTestViewController.m */,
 				DC7DC5471415523F00601B40 /* RegisteredLoggingTestViewController.xib */,
 				DC7DC5361415523E00601B40 /* Supporting Files */,
+				91DC952E2AD4594000786F67 /* CustomLogger.h */,
+				91DC952F2AD4599700786F67 /* CustomLogger.m */,
 			);
 			path = RegisteredLoggingTest;
 			sourceTree = "<group>";
@@ -236,11 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DC95302AD4599700786F67 /* CustomLogger.m in Sources */,
 				DC7DC53C1415523E00601B40 /* main.m in Sources */,
 				DC7DC5401415523F00601B40 /* RegisteredLoggingTestAppDelegate.m in Sources */,
 				DC7DC5461415523F00601B40 /* RegisteredLoggingTestViewController.m in Sources */,
-				DC7DC5671415538700601B40 /* Lions.m in Sources */,
-				DC7DC5681415538700601B40 /* Tigers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
